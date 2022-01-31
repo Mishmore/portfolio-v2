@@ -16,7 +16,7 @@ import { Footer } from '@/components/Footer'
 
 const Wrapper = tw.div`h-full w-full relative`
 
-const Section = tw.section`py-20 grid grid-cols-12`
+const Section = tw.section`py-20 grid grid-cols-1 lg:grid-cols-12 gap-4`
 
 const Main = tw.main`h-screen flex flex-col items-center justify-center`
 
@@ -43,8 +43,8 @@ const Home: NextPage = () => {
           <TitleLight tw="w-2/3">& GRAPHIC DESIGNER</TitleLight>
         </Main>
         <Section>
-          <TitleSection tw="col-span-3">ABOUT</TitleSection>
-          <div tw="col-start-6 col-span-6">
+          <TitleSection tw="lg:col-span-3">ABOUT</TitleSection>
+          <div tw="lg:col-start-6 lg:col-span-6">
             <Text>
               I’m Michelle More, a front-end developer with 4+ years of
               experience working in web development with React and Vue.{' '}
@@ -63,8 +63,8 @@ const Home: NextPage = () => {
           </div>
         </Section>
         <Section>
-          <TitleSection tw="col-span-3">CONTACT</TitleSection>
-          <div tw="col-start-6 col-span-6">
+          <TitleSection tw="lg:col-span-3">CONTACT</TitleSection>
+          <div tw="lg:col-start-6 lg:col-span-6">
             <Text>You can reach me at the email michellemore28@gmail.com</Text>
           </div>
         </Section>

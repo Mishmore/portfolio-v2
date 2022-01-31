@@ -1,5 +1,5 @@
 const themesTw: any = {
-  light: 'bg-caramel text-chocolate',
+  light: 'bg-pink text-brown',
   dark: 'bg-mocca text-rose',
 }
 

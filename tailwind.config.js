@@ -10,6 +10,8 @@ module.exports = {
         chocolate: '#9B4317',
         mocca: '#9F5136',
         rose: '#F8D9C5',
+        brown: '#BA4E29',
+        pink: '#FDD8BF',
       },
       transitionProperty: {
         color: 'color',
