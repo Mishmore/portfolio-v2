@@ -1,13 +1,20 @@
 import tw from 'twin.macro'
+import { Option } from './Commons'
+import useThemeContext from '@/hooks/useThemeContext'
 
 const FooterWrapper = tw.footer`w-full p-4 lg:p-16`
 
-const Option = tw.a`text-sm lg:text-xl font-light`
+export const Footer = () => {
+  const { theme } = useThemeContext()
 
-export const Footer = () => (
-  <FooterWrapper>
-    <Option href="https://www.linkedin.com/in/michellemoreflores/">
-      LINKEDIN
-    </Option>
-  </FooterWrapper>
-)
+  return (
+    <FooterWrapper>
+      <Option
+        theme={theme}
+        href="https://www.linkedin.com/in/michellemoreflores/"
+      >
+        LINKEDIN
+      </Option>
+    </FooterWrapper>
+  )
+}

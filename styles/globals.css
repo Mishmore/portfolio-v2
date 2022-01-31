@@ -15,11 +15,94 @@ a {
 
 * {
   box-sizing: border-box;
-  font-family: 'Lexend', sans-serif;
+  font-family: 'Red Hat Text', sans-serif;
   @apply transition-all duration-75;
   scroll-behavior: smooth;
 }
 
+h1 {
+  font-family: 'Spinnaker', sans-serif;
+}
+
 p {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Red Hat Text', sans-serif;
+}
+
+.js-scroll {
+}
+
+.js-scroll.scrolled {
+}
+
+.fade-in {
+  animation: fade-in 1.3s ease-in-out both;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes up {
+  from { 
+    height: 0 
+  }
+  to { 
+    height: 245px 
+  }
+}
+
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes underline-out {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+:root {
+  --translate-title: 0%;
+}
+
+@media(min-width: 1024px) {
+  :root {
+      --translate-title: 70%;
+  }
+}
+
+
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(150%);
+    transform: translateX(150%);
+  }
+  100% {
+       -webkit-transform: translateX(var(--translate-title));
+      transform: translateX(var(--translate-title));
+  }
 }
